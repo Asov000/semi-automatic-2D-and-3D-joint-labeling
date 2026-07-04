@@ -301,23 +301,3 @@ MASK_NMS_SAME_CLASS_OVERLAP_MIN_THRESHOLD
 ### Open3D 窗口没有显示或无法交互
 
 确认已安装 `open3d`，并且当前环境支持图形窗口。远程服务器或无桌面环境可能无法打开 Open3D 可视化窗口。
-
-## 开发与检查
-
-对全部源码做语法检查：
-
-```bash
-python -m compileall main
-```
-
-检查二维导出 mask：
-
-```bash
-python main/test_tools/segmentation_masks.py
-```
-
-运行点云投影调试：
-
-```bash
-python main/projection_tools/scripts.py
-```
